@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+    <div class="container">   
+    <div>   
+    <h1>University Registration Form</h1>
+    <p style="background-color: rgb(44, 181, 212)">Please fill out the form below to resister.</p>
+    </div>
+    <hr>
+    <div>
+    <h2>Personal Details</h2>
+
+    <label for="name">First Name</label>
+    <input type="text" name="username" id="name"placeholder="e.g..Aman Anvay" style="background-color: rgb(131, 220, 240)">
+    <br><br>
+    <label for="last name">Last Name</label>
+    <input type="text" name="surname" id="last name"placeholder="e.g..Prajapati"style="background-color: rgb(131, 220, 240)">
+    <br><br>
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob"style="background-color: rgb(131, 220, 240)">
+    <br><br>
+    <h3>Gender</h3>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male">
+    <br><br>
+    <label for="female">female</label>
+    <input type="radio" name="gender" id="female">
+    <br><br>
+    <label for="other">other</label>
+    <input type="radio" name="gender" id="other">
+    <br><br>
+    <p>Upload Your Photo:</p>
+    <input type="file"style="background-color: rgb(131, 220, 240)">
+    <br><br>
+    </div>
+    <hr>
+    <div>
+    <h2>Contact Information</h2>
+    <label for="email">Email Address:</label>
+    <input type="email" name="Email" id="email"placeholder="e.g..abc@gmail.com"style="background-color: rgb(131, 220, 240)">
+    <br><br>
+    <label for="phone number">Phone Number</label>
+    <input for="tel" name="phone number" id="phone number" placeholder="e.g..324536xxxx"style="background-color: rgb(131, 220, 240)">
+    <br><br>
+    <label for="Address">Mailing Address</label>
+    <br><br>
+    <textarea name="Address" id="Address" rows="10"cols="20" placeholder="e.g..abc model down New Delhi 1100xx"style="background-color: rgb(131, 220, 240)"></textarea>
+    </div>
+    <hr>
+    <div>
+    <h2>Academic Information</h2>
+    <label type="course">Select Your Course:</label>
+    <select name="course"id="course"style="background-color: rgb(131, 220, 240)">
+        <option value="CSE">CSE</option>
+        <option value="CSDS">CSDS</option>
+        <option value="CSAIML">CSAIML</option>
+        <option value="ME">Mechanical Engineering</option>
+    </select>
+    <br><br>
+    <p>Extracurricular Interests:</p>
+    <label for="sports">sports</label>
+    <input type="checkbox" name="interest" id="sports">
+    <br>
+    <label for="music & arts">Music and Arts</label>
+    <input type="checkbox" name="interest" id="music & arts">
+    <br>
+    <label for="Technology Clubs">Technology Clubs</label>
+    <input type="checkbox" name="interest" id="Technology Clubs">
+    <br>
+    <label for="Volunteering">Volunteering</label>
+    <input type="checkbox" name="interest" id="Volunteering">
+    <br><br>
+    </div>
+    <hr>
+    <div>
+        <h2>Create Your account</h2>
+        <label for="pass">Password</label>
+        <input type="password" name="password" id="pass"style="background-color: rgb(131, 220, 240)">
+        <br><br>
+        <label type="text">Security Question:</label>
+        <select name="Security Question" id="Security Question"style="background-color: rgb(131, 220, 240)">
+            <option value="What are your first pet's name?">What are your first pet's name?</option>
+            <option value="puppy">puppy</option>
+            <option value="moti">moti</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+        <label for="secu">Security Answer</label>
+        <input type="text" name="Security" id="secu"style="background-color: rgb(131, 220, 240)">
+
+        <hr>
+        <br>
+        <!--<input typr="submit" value="Resister">
+        OR-->
+        <button type="submit"style="background-color: rgb(131, 220, 240)">Resister</button>
+        <button type="reset"style="background-color: rgb(131, 220, 240)">Clear Form</button>
+        <br><br>
+        <hr>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
