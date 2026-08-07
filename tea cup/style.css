@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:url("https://static.vecteezy.com/system/resources/thumbnails/057/159/866/small_2x/delicate-pastel-carnations-elegantly-arranged-along-the-right-side-against-a-soft-blue-backdrop-photo.jpg");
+    /* background:url("https://wallpapershome.com/images/pages/ico_h/1128.jpg"); */
+    /* background: url("https://img.freepik.com/premium-photo/abstract-beautiful-luxury-blur-hotel-interior-background_1109006-36871.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.message{
+    position:absolute;
+    background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.3));
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:900px;
+    width:600px;
+    margin-left: 3%;
+    margin-top: 3%;
+    border-radius:calc(20px);
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.25),
+        inset 0 5px 10px rgba(255,255,255,0.9),
+        inset 0 -5px 10px rgba(0,0,0,0.15);
+}
+h1{
+    position:absolute;
+    margin-top: 80px;
+    margin-left: 20px;
+    font-size: 80px;
+}
+.container{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    margin-top: 350px;
+    margin-left: 45%;
+    background-color: rgb(244, 247, 250);
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius:40%;
+    display: flex;
+    align-items: center;
+    
+}
+.cup{
+    position:absolute;
+    height: 100px;
+    width: 400px;
+    background-color: #d26f0d;
+    border-radius: 50%;
+    margin-top: -100%;
+    box-sizing: border-box;
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.25),
+        inset 0 5px 10px rgba(255,255,255,0.9),
+        inset 0 -5px 10px rgba(0,0,0,0.15);
+    z-index:10;
+}
+.handle{
+    position:absolute;
+        right:-45px;
+    top:100px;
+    width:50px;
+    height:200px;
+    border:20px solid #ccc;
+    border-left:none;
+    border-radius:0 80px 80px 0;
+    
+}
+.plate{
+    position:absolute;
+    width:900px;
+    height:120px;
+    background:linear-gradient(to right,#f5f4f4,#e7e7e7);
+    border-radius:50%;
+    margin-top: 72.7%;
+    margin-left: -60%;
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.25),
+        inset 0 5px 10px rgba(236, 162, 162, 0.9),
+        inset 0 -5px 10px rgba(10, 8, 8, 0.15);
+        
+}
+
+/* Inner Circle */
+.plate::before{
+    content:"";
+    position:absolute;
+    top:10px;
+    left:20px;
+    right:10px;
+    bottom:10px;
+    border-radius:50%;
+    background:linear-gradient(to left,#f5f5f5,#dddddd);
+}
+
+/* Center Area */
+.plate::after{
+    content:"";
+    position:absolute;
+    top:40px;
+    left:200px;
+    width:500px;
+    height:60px;
+    border-radius:50%;
+    background:linear-gradient(to right,#e5e5e5,#ffffff);
+    box-shadow:inset 0 5px 10px rgba(186, 101, 101, 0.948);
+}
+.vapour{
+    position:relative;
+    display:flex;
+    padding:0 20px;
+    justify-content:center;
+    z-index:1;
+}
+
+.vapour span{
+    position:relative;
+    bottom:0;
+    display:block;
+    margin:0 3px 40px;
+    min-width:20px;
+    height:120px;
+    background: #f9f9f9;
+    border-radius:10%;
+    filter:blur(10px);
+    opacity:0;
+    animation:animate 5s linear infinite;
+    animation-delay:calc(var(--i) * -0.4s);
+}
+
+@keyframes animate{
+
+    0%{
+        transform:translateY(0) scaleX(1);
+        opacity:0;
+    }
+
+    15%{
+        opacity:0.5;
+    }
+
+    50%{
+        transform:translateY(-150px) scaleX(4);
+        opacity:0.8;
+    }
+
+    95%{
+        opacity:0;
+    }
+
+    100%{
+        transform:translateY(-300px) scaleX(8);
+        opacity:0;
+    }
+}

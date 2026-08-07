@@ -1,0 +1,107 @@
+*{
+    margin:0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    /* background: url("https://images.unsplash.com/photo-1622737133809-d95047b9e673?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2ltcGxlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D"); */
+    background: url("https://th.bing.com/th/id/R.12ea9f011de49d32790940d5e204affb?rik=kZoFXm83de%2bs%2bQ&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f230654-minimalism-simple-simple_background-abstract.jpg&ehk=wQ63belrsGXY3EZFwdKBUkRIP%2bs7mOqE%2f0%2fpCCNxbMw%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.container{
+    height: 600px;
+    width: 400px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-size: cover;
+    background-position: center;
+    border-radius:calc(35px);
+    margin-left: 30%;
+    margin-top: 25%;
+    border: 3px solid rgba(255,255,255,0.3);
+    box-sizing: border-box;
+}
+h1{
+    color:white;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-size: 50px;
+}
+h2{
+    color:white;
+    margin-top: -5%;
+    font-size: 15px;
+    margin-left: -40%;
+    padding-top: 10px;
+
+}
+h3{
+    color:white;
+    margin-top: -5%;
+    font-size: 15px;
+    padding-top: 10px;
+    margin-top: 1px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+input{
+    font-size: 20px;
+    min-height: 50px;
+    border-radius: calc(25px);
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.3);
+    padding: 0 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+button{
+    font-size: 20px;
+    min-height: 50px;
+    width: 80%;
+    border-radius:calc(25px);
+    border: 2px solid rgba(255,255,255,0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+hr{
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    margin: 15px 0;
+}
+.fa-solid{
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    margin-left: 200px;
+}
+label{
+    color: aliceblue;
+    text-decoration: none;
+    margin-left:-30%;
+    position: relative;
+}
+.remember-forgot{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+a{
+    color:rgb(239, 236, 233);
+}
+input{
+    margin-top: -45px;
+}
